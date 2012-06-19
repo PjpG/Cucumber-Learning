@@ -1,0 +1,11 @@
+<%= form_for @car do |f| %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p class="button"><%= f.submit "Add" %></p>
+<% end %>
