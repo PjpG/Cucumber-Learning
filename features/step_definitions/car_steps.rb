@@ -19,9 +19,10 @@ Given /^I have no cars$/ do
 end
 
 Given /^I am on (.+)$/ do |cars|
-  cars
+  visit cars_path
 end
 
 When /^I follow "(.*?)"$/ do |link|
+  # screen_shot_and_save_page
   click_link(link)
 end
